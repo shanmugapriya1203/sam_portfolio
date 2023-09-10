@@ -411,37 +411,37 @@ text-align: center;
 
 /* Project Section */
 .project {
-    background-color: var(--second-color); /* Set the background color to match your theme */
+    background-color: var(--second-color); 
     padding: var(--mb-4) 0;
   }
   
   .project_container {
     display: flex;
-    justify-content: space-around; /* Adjust the spacing between project cards as needed */
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if there's not enough space */
+    justify-content: space-around; 
+    flex-wrap: wrap; 
   }
   
   .project_card {
-    flex: 0 0 calc(25% - 2rem); /* Adjust the width of each card to fit 4 cards in a row */
+    flex: 0 0 calc(25% - 2rem); 
     background-color: #fff;
     border-radius: 0.5rem;
     padding: 1rem;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
     text-align: center;
-    margin-bottom: var(--mb-3); /* Adjust the margin between project cards as needed */
+    margin-bottom: var(--mb-3); 
   }
   
   .project_name {
     font-size: 1.25rem;
     font-weight: var(--font-semi);
-    color: var(--first-color); /* Set the text color to match your theme */
+    color: var(--first-color); 
     margin-top: var(--mb-2);
   }
   
   .project_link {
     display: inline-block;
     padding: 0.25rem 1rem;
-    background-color: var(--first-color); /* Set the link background color to match your theme */
+    background-color: var(--first-color); 
     color: #fff;
     border-radius: 0.25rem;
     margin-top: var(--mb-2);
@@ -450,10 +450,21 @@ text-align: center;
   }
   
   .project_link:hover {
-    background-color: #c3207f; /* Change the background color on hover */
+    background-color: #c3207f; 
   }
   
-  /* Adjust the styling as needed to match your theme */
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .project_card {
+      flex: 0 0 calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .project_card {
+      flex: 0 0 calc(100% - 2rem); 
+    }
+  }
   
 
 
